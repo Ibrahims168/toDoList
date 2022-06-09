@@ -1,32 +1,95 @@
-
-.header{
-    background-color: rgb(248, 156, 133);
-    display: grid;
-    align-items: center;
-    justify-items: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-
-.addNewTask{
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%) ;
+}
+.mainContainer{
+    margin: 120px auto;
+    max-width: 400px;
     width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+}
+.mainContainer .header{
+    font-size: 30px;
+    font-weight: 600;
+}
+.mainContainer .inputs{
+    width: 85%;
     height: 100%;
-    background-color: rgb(247, 220, 177);
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
     display: grid;
+    grid-template-rows: auto;
+    outline: none;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;      
+}
+
+input{
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.inputs button{
+    width: 40px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #33ba79;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+.mainContainer .toDoList{
+
+}
+.toDoList li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 10px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+}
+.toDoList li span{
+    position: absolute;
+    right: 0px;
+    width: 45px;
+    text-align: center;
+    background: #e74d3cde;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+.mainContainer .footer{
+    display: flex;
+    width: 100%;
     align-items: center;
-    justify-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
 }
-.newTaskInputs{
-    width: 30%;
-    height: 65%;
-    margin: 1%;
-    padding-left: 10px;
-    border-radius: 10px;
-}
-#submitTaskBtn{
-    width: 20%;
-    height: 65%;
-    margin: 1%;
-    padding-left: 10px;
-    border-radius: 10px;
+.footer button{
+    border: none;
+    outline: none;
+    background: #33ba79;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 10px; 
+ 
 }
